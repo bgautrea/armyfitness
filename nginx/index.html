@@ -25,7 +25,9 @@ body, html {height: 100%}
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('acft').style.display='block'" class="w3-button w3-black">ACFT</button></p>
-    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
+    <p><button onclick="document.getElementById('apft').style.display='block'" class="w3-button w3-black">APFT</button></p>
+    <p><button onclick="document.getElementById('abfc-male').style.display='block'" class="w3-button w3-black">Bodyfat Male</button></p>
+    <p><button onclick="document.getElementById('abfc-female').style.display='block'" class="w3-button w3-black">Bodyfat Female</button></p>
   </div>
   <div class="w3-display-bottomleft w3-container">
     <p class="w3-xlarge">Calculators</p>
@@ -35,24 +37,28 @@ body, html {height: 100%}
 <!-- Menu Modal -->
 <div id="acft" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
+    <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
     <iframe src="https://fitness.defense.f5govse.com/acft" title="Army Combat Fitness Test"></iframe>
     </div>
   </div>
 </div>
-<div id="acft" class="w3-modal">
+<div id="apft" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
+    <span onclick="document.getElementById('apft').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
     <iframe src="https://fitness.defense.f5govse.com/apft" title="Army Combat Fitness Test"></iframe>
     </div>
   </div>
 </div>
-<div id="acft" class="w3-modal">
+<div id="abfc-male" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
+    <span onclick="document.getElementById('abfc-male').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
     <iframe src="https://fitness.defense.f5govse.com/abfc-male" title="Army Body Fat Calculator Male"></iframe>
     </div>
   </div>
 </div>
-<div id="acft" class="w3-modal">
+<div id="abfc-female" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
+    <span onclick="document.getElementById('abfc-female').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
     <iframe src="https://fitness.defense.f5govse.com/abfc-female" title="Army Body Fat Calculator Female"></iframe>
     </div>
   </div>
